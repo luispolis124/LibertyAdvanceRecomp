@@ -37,6 +37,7 @@
 *.exe
 *.out
 *.app
+LibertyAdvanceRecomp
 
 # Build directories
 build/
@@ -66,3 +67,24 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# ==========================================
+# LibertyAdvanceRecomp Specific Ignores
+# ==========================================
+
+# Game ROMs & Binary Assets (Do not commit copyrighted ROM files)
+*.gba
+*.bin
+
+# Recompiled Source Code Output
+src/recompiled/
+
+# External Tools Build Artifacts (unless tracked as submodules)
+tools/gbarecomp/build/
+
+# OS / Editor Specific Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.kate-swp
